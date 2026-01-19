@@ -1,0 +1,14 @@
+# 应用基本信息
+spring:
+  application:
+    name: springboot-helloworld
+
+# 服务器配置
+server:
+  port: 8090
+
+# 日志配置
+logging:
+  level:
+    root: INFO
+    com.example: DEBUG
