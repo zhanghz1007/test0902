@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <pluginGroups>
+    </pluginGroups>
+
+  <mirrors>
+    <mirror>
+      <id>cmcc-devops-mirror</id>
+      <mirrorOf>*</mirrorOf>
+      <name>CMCC DevOps Mirror</name>
+      <url>https://artifact-196.4c-uat.cmdevops.cn:20013/artifactory/maven/</url>
+    </mirror>
+  </mirrors>
+
+    <proxies>
+    </proxies>
+
+    <servers>
+        <server>
+
+        </server>
+    </servers>
+    <profiles>
+        <profile>
+            <repositories>
+                <repository>
+                    <id>cmcc-devops</id>
+                    <name>maven</name>
+                    <url>https://artifact-196.4c-uat.cmdevops.cn:20013/artifactory/maven/</url>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>cmcc-devops</id>
+                    <name>maven</name>
+                    <url>https://artifact-196.4c-uat.cmdevops.cn:20013/artifactory/maven/</url>
+                </pluginRepository>
+            </pluginRepositories>
+            <id>artifactory</id>
+        </profile>
+    </profiles>
+    <activeProfiles>
+        <activeProfile>artifactory</activeProfile>
+    </activeProfiles>
+</settings>
