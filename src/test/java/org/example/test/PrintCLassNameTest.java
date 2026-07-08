@@ -4,7 +4,7 @@ package org.example.test;
 import org.junit.Test;
 
 
-class PrintCLassNameTest {
+public class PrintCLassNameTest {
 
     @Test
     public void printClassName() {
