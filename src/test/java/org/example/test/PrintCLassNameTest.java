@@ -7,7 +7,7 @@ import org.junit.Test;
 class PrintCLassNameTest {
 
     @Test
-    void printClassName() {
+    public void printClassName() {
         PrintCLassName printCLassName = new PrintCLassName();
         printCLassName.printClassName();
 
