@@ -1,11 +1,13 @@
 package org.example.test;
 
-import org.junit.jupiter.api.Test;  // JUnit 5的Test注解
+
+import org.junit.Test;
+
 
 public class PrintCLassNameTest {
 
-    @Test  // JUnit 5的@Test注解，不需要public
-    void printClassName() {  // JUnit 5的方法可以是package-private，不需要public
+    @Test
+    public void printClassName() {
         PrintCLassName printCLassName = new PrintCLassName();
         printCLassName.printClassName();
 
